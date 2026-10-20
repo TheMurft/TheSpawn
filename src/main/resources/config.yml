@@ -1,0 +1,24 @@
+# TheSpawn 2.0
+# All messages support legacy colors (&a) and hex colors (&#55FFFF).
+
+settings:
+  # Seconds the player must stay still before being teleported.
+  teleport-delay-seconds: 3
+  # Movement tolerance before the teleport is cancelled.
+  movement-tolerance: 0.2
+
+# Prevents Minecraft's default "joined/left the game" messages.
+join-quit-messages:
+  hide-vanilla: true
+
+messages:
+  prefix: "&7[&#55FFFFTheSpawn&7] "
+  teleported: "&fYou have been teleported to spawn."
+  spawn-set: "&fThe server spawn has been set at your location."
+  spawn-not-set: "&cThe server spawn has not been configured yet."
+  warmup: "&fTeleporting in &b{seconds} &fseconds. Do not move."
+  cancelled: "&cTeleport cancelled because you moved or took damage."
+  no-permission: "&cYou do not have permission to do that."
+  players-only: "&cThis command can only be used by players."
+  usage-main: "&cUsage: /thespawn reload"
+  reloaded: "&fConfiguration reloaded successfully."

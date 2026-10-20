@@ -1,0 +1,31 @@
+name: TheSpawn
+version: '2.0.2'
+main: com.themurft.thespawn.TheSpawnPlugin
+api-version: '1.21'
+author: TheMurft
+description: A lightweight and configurable spawn manager.
+
+commands:
+  spawn:
+    description: Teleports you to the server spawn.
+    usage: /spawn
+    permission: thespawn.spawn
+  setspawn:
+    description: Sets the server spawn at your current location.
+    usage: /setspawn
+    permission: thespawn.setspawn
+  thespawn:
+    description: Reloads TheSpawn configuration.
+    usage: /thespawn reload
+    permission: thespawn.reload
+
+permissions:
+  thespawn.spawn:
+    description: Allows use of /spawn.
+    default: true
+  thespawn.setspawn:
+    description: Allows use of /setspawn.
+    default: op
+  thespawn.reload:
+    description: Allows reloading the plugin.
+    default: op
